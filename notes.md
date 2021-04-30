@@ -1,6 +1,6 @@
 
 ## How it works:
-Traditional deepfake technology requires many source videos in order to learn enough about a subject to map his or her characteristics onto the driving video. First order motion models, on the other hand, works by transferring key points from the driving video onto a single source image. The result is that first order motion models often take much less time to train, while still retaining output credibility. However, with unlimited resources, deepfake technology will eventually surpass first order motion models in terms of output credibility.
+Traditional deepfake technology requires many source videos in order to learn enough about a subject to map his or her characteristics onto the driving video. First order motion models, on the other hand, works by transferring key points from the driving video onto a single source image. The result is that first order motion models often take much less time to train, while still retaining high output credibility. However, the source image for a first order motion model must be similar to the first frame of the driving video; and with unlimited resources, deepfake technology will eventually surpass first order motion models in terms of output credibility.
 
 ## Running the demo:
 Create virtual env: `python3 -m venv scrapy-env`\
