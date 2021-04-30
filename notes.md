@@ -10,3 +10,13 @@ Download sources: (from link to google drive)\
 Download ffmpeg with python: (if necessary; import imageio first)\
 **Run demo:** `python demo.py  --config config/dataset_name.yaml --driving_video path/to/driving --source_image path/to/source --checkpoint path/to/checkpoint --relative --adapt_scale`\
 *ie.* `python demo.py  --config config/vox-256.yaml --driving_video sources/00.mp4 --source_image sources/statue-04.png --checkpoint sources/vox-cpk.pth.tar --relative --adapt_scale --cpu`\
+
+## Running with your own driving video and source image:
+Activate virtual env: `source scrapy-env/bin/activate`\
+**Get a source image:** (resize it to 256x256 and put it in the source folder)\
+**Get a driver video:** (download from youtube or record one with your camera)\
+Install face_alignment (if necessary): `git clone https://github.com/1adrianb/face-alignment`; `cd face-alignment`; `pip install -r requirements.txt`; `python setup.py install`\
+**Get crop suggestions:** `python crop-video.py --inp video_name.mp4 --cpu`\
+Install ffmpeg (if necessary): `brew install ffmpeg`\
+**Run ffmpeg suggestion:** `ffmpeg ...`\
+**Run demo:** `python demo.py  --config config/vox-256.yaml.yaml --driving_video sources/driving_vid.mp4 --source_image sources/source_img.png --checkpoint sources/vox-cpk.pth.tar --relative --adapt_scale --cpu`\

@@ -5,3 +5,4 @@ __pycache__
 /sources
 .DS_Store
 /results
+/face-alignment
