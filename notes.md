@@ -16,7 +16,7 @@ Activate virtual env: `source scrapy-env/bin/activate`\
 **Get a source image:** (resize it to 256x256 and put it in the source folder)\
 **Get a driver video:** (download from youtube or record one with your camera)\
 Install face_alignment (if necessary): `git clone https://github.com/1adrianb/face-alignment`; `cd face-alignment`; `pip install -r requirements.txt`; `python setup.py install`\
-**Get crop suggestions:** `python crop-video.py --inp video_name.mp4 --cpu`\
+**Get crop suggestions (takes around 15 minutes for a 10 second video):** `python crop-video.py --inp video_name.mp4 --cpu`\
 Install ffmpeg (if necessary): `brew install ffmpeg`\
 **Run ffmpeg suggestion:** `ffmpeg ...`\
 **Run demo:** `python demo.py  --config config/vox-256.yaml.yaml --driving_video sources/driving_vid.mp4 --source_image sources/source_img.png --checkpoint sources/vox-cpk.pth.tar --relative --adapt_scale --cpu`\
